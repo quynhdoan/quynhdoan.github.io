@@ -6556,3 +6556,7 @@ header {
     padding-right: 0.9375rem;
     width: 50%;
     float: left; }
+
+/* line 33, /home/deno-andinh/Projects/personal/source/stylesheets/app.css.scss */
+.top-bar .name h1 a :hover {
+  cursor: pointer; }

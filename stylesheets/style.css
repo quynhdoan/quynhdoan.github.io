@@ -1,3 +1,18 @@
-/* line 3, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
+/* line 5, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
 .bio h2, .bio h3, .bio p {
   color: black; }
+
+/* line 10, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
+#main-content {
+  margin-top: 20px;
+  background-color: #eaeaea; }
+  /* line 13, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
+  #main-content h1 {
+    font-size: 1.6em; }
+  /* line 17, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
+  #main-content h2 {
+    font-size: 1.2em; }
+
+/* line 22, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
+.vcard {
+  border: none; }
