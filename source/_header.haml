@@ -1,0 +1,28 @@
+/ Nav Bar
+.row
+  .large-12.columns
+    %nav.top-bar.hide-for-small{:data => {:topbar => ""}}
+      %section.top-bar-section
+        / Left Nav
+        %ul.left
+          %li
+            %a{:href => "/"}
+              %strong Home
+
+        / Right Nav Section
+        %ul.right.button-group.radius
+          = social_network_link(  'Github',
+                                  github_username,
+                                  "//github.com/#{github_username}")
+          = social_network_link(  'stack overflow',
+                                  stackoverflow_username,
+                                  "//stackoverflow.com/users/3298432/quinn")
+          = social_network_link(  'LinkedIn',
+                                  linkedin_profile_name,
+                                  "//linkedin.com/pub/#{ linkedin_profile_name}/49/8b6/599/")
+          %li
+            = link_to "Blog", blog_url, class: "button", :target => "_blank"
+          %li
+            = link_to "Contact", "/contact", class: "button"
+        %hr/
+    / End Nav

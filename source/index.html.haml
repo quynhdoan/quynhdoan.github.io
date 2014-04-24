@@ -1,0 +1,25 @@
+/ Main Page Content and Sidebar
+.large-2.small-2.columns
+  = gravatar_for(email, size: 100)
+.large-10.small-10.columns{role: "content"}
+  -#.twelve.columns.text-center
+  %h1
+    Hello, I'm
+    = full_name
+    \.
+  %p
+    To start things off: I'm a web developer living in Southern California; my hobbies are reading up on the latest tech news, playing with my brown Dachshund (Brownie), and general geeking.
+    %br/
+    %br/
+    I hope with this and my blog also, to add writing to my obviously "lengthy" list. So far as that goes, I'll keep the "about me" details spare (I wouldn't want anyone to mistake this for a match.com post). The most important thing to note is that my materials are going to be about my thoughts, opinions and not tutorial-oriented. If you were searching for such, I'm sure I can make some recommendations later.
+
+  %h1 Archive
+  %ul
+    %li
+      = link_to "On the trap I set for myself", "https://medium.com/p/f1874a4ac430"
+    %li
+      = link_to "Read it, and repeat it", "https://medium.com/developer-developers-developers/ed7cc23e0f2"
+    %li
+      = link_to "My First Ruby on Rails project", "https://medium.com/p/1db0e4c8bd18"
+    %li
+      = link_to "So, here goes something", "https://medium.com/p/7fa1cc173519"

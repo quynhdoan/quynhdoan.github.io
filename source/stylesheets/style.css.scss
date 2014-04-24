@@ -1,0 +1,30 @@
+@import "normalize";
+
+$gray-medium-light: #eaeaea;
+
+#main-content {
+    font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
+
+    margin-top: 20px;
+    background-color: #eee;
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em
+    }
+}
+
+.vcard {
+    border: none;
+}
+
+// .top-bar-section ul li > a.button {
+//     background-color: #eb974e;
+
+//     &:hover {
+//         background: darken(#eb974e, 15%);
+//         color: white;
+//     }
+// }

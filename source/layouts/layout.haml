@@ -1,0 +1,50 @@
+!!!
+%html.no-js{lang: "en"}
+    %head
+        %meta{charset: "utf-8"}/
+        %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+        / Use title if it's in the page YAML frontmatter
+        %title= data.page.title || "Digging for gems"
+        = stylesheet_link_tag "app", "style"
+        = javascript_include_tag "modernizr"
+
+        %link{href: "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", media: "screen", rel: "stylesheet", type: "text/css"}/
+
+    %body
+        .off-canvas-wrap{:data => {:offcanvas => ""}}
+            .inner-wrap
+                / Off Canvas Menu
+                %aside.left-off-canvas-menu
+                    %ul.off-canvas-list
+                        %li
+                            %label.first Menu
+                        %li
+                            = link_to "Home", "/"
+                        %li
+                            = link_to "GitHub", github_url, :target => "_blank"
+                        %li
+                            = link_to "Stack Overflow", stackoverflow_url, :target => "_blank"
+                        %li
+                            = link_to "LinkedIn", linkedin_url, :target => "_blank"
+                        %li
+                            = link_to "Blog", blog_url, :target => "_blank"
+                        %li
+                            = link_to "Contact", "/contact"
+
+                %nav.tab-bar.show-for-small
+                    %section.left-small
+                        %a.left-off-canvas-toggle.menu-icon{href: "#"}
+                            %span Home
+
+                / Header
+                = partial "header"
+
+                / Main content
+                .row
+                    %section#main-content.main-section.small-10.small-centered.columns
+                        = yield
+
+                / Footer
+                = partial "footer"
+                %a.exit-off-canvas
+        = javascript_include_tag  "all"
