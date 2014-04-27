@@ -37,6 +37,7 @@ end
 #   config.output_style = :compact
 # end
 
+set :build_dir, "quynhdoan.github.io"
 ###
 ## Site-wide settings
 ####
