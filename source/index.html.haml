@@ -1,33 +1,32 @@
 / Main Page Content and Sidebar
-.large-2.small-2.columns
-  = gravatar_for(email, size: 100)
-.large-10.small-10.columns{role: "content"}
-  -#.twelve.columns.text-center
-  %h1 Hello, World!
-  %p
-    I'm a web developer currently basking in the medium-white glow of my ThinkPad proudly sporting the milky pale complexion that comes with loving indoor, in bed, INTERNET-related activities. My hobbies include reading up on the latest tech news, playing with my brown Dachshund (Brownie), and learning how to develop web applications like a boss.
-    %br/
-    %br/
-    The blog included in my collection is an effort to follow my own advice and push myself ever forward. The content will be an aggregation of my thoughts, opinions, and ideas rather than how-to's for the geeky and infamous. I am the sole owner and proprietor of all materials posted particularly in terms of tech-related works, though the writing will be in collaboration with
+-#.twelve.columns.text-center
+= gravatar_for(email, size: 120)
 
-    = link_to "Samantha Huynh", "//medium.com/@samhuynh"
-    \- my co-author/editor.
-    %br/
-    %br/
-    This collaboration is done in order to improve the overall quality of the work and add dimension to the content via differing perspective.
-    %br/
-    %br/
-    I hope you brought your Urkel spectacles, it's going to be a nerdy ride.
+%h1 Hello, World!
+%p
+  I'm a web developer currently basking in the medium-white glow of my ThinkPad proudly sporting the milky pale complexion that comes with loving indoor, in bed, INTERNET-related activities. My hobbies include reading up on the latest tech news, playing with my brown Dachshund (Brownie), and learning how to develop web applications like a boss.
+  %br/
+  %br/
+  The blog included in my collection is an effort to follow my own advice and push myself ever forward. The content will be an aggregation of my thoughts, opinions, and ideas rather than how-to's for the geeky and infamous. I am the sole owner and proprietor of all materials posted particularly in terms of tech-related works, though the writing will be in collaboration with
 
-  %h1 Archive
-  %ul
-    %li
-      = link_to "Habitual Productivity", "//medium.com/p/83fd7a29c020"
-    %li
-      = link_to "On the trap I set for myself", "//medium.com/p/f1874a4ac430"
-    %li
-      = link_to "Read it, and repeat it", "//medium.com/developer-developers-developers/ed7cc23e0f2"
-    %li
-      = link_to "My First Ruby on Rails project", "//medium.com/p/1db0e4c8bd18"
-    %li
-      = link_to "So, here goes something", "//medium.com/p/7fa1cc173519"
+  = link_to "Samantha Huynh", "//medium.com/@samhuynh"
+  \- my co-author/editor.
+  %br/
+  %br/
+  This collaboration is done in order to improve the overall quality of the work and add dimension to the content via differing perspective.
+  %br/
+  %br/
+  I hope you brought your Urkel spectacles, it's going to be a nerdy ride.
+
+%h1 Archive
+%ul
+  %li
+    = link_to "Habitual Productivity", "//medium.com/p/83fd7a29c020"
+  %li
+    = link_to "On the trap I set for myself", "//medium.com/p/f1874a4ac430"
+  %li
+    = link_to "Read it, and repeat it", "//medium.com/developer-developers-developers/ed7cc23e0f2"
+  %li
+    = link_to "My First Ruby on Rails project", "//medium.com/p/1db0e4c8bd18"
+  %li
+    = link_to "So, here goes something", "//medium.com/p/7fa1cc173519"
