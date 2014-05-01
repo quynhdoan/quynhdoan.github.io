@@ -396,7 +396,8 @@ th {
 #main-content {
   font-family: freight-text-pro, Georgia, Cambria, 'Times New Roman', Times, serif;
   margin-top: 20px;
-  background-color: #eee; }
+  padding-top: 20px;
+  padding-bottom: 20px; }
   /* line 10, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
   #main-content h1 {
     font-size: 1.2em; }
@@ -404,6 +405,17 @@ th {
   #main-content p {
     font-size: 1em; }
 
-/* line 19, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
+/* line 22, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
 .vcard {
   border: none; }
+
+@media (min-width: 480px) {
+  /* line 27, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
+  .gravatar {
+    display: none; } }
+@media (min-width: 600px) {
+  /* line 33, /home/deno-andinh/Projects/personal/source/stylesheets/style.css.scss */
+  .gravatar {
+    display: inline-block;
+    float: left;
+    margin: 20px 20px 20px 0; } }
